@@ -5,8 +5,12 @@ import ButtonInner from '@/components/ButtonInner'
 export default function Home() {
   const router = useRouter()
 
-  const onClickEvent = () => {
-    router.push('/login')
+  const onClickSuccessEvent = () => {
+    router.push('/dashboard')
+  }
+
+  const onClickFailureEvent = () => {
+    router.push('/')
   }
 
   return (
@@ -19,10 +23,13 @@ export default function Home() {
         </div>
       <div className="prose prose-sm prose-invert max-w-none">
         <h1 className="text-xl p-8 font-bold">
-          Landing Page
+          Login Page
         </h1>
-          <a onClick={onClickEvent} className="mx-auto hover:shadow-lg flex bg-green-400 shadow-xl mb-4 shadow-green-200 p-2 align-center gap-2 cursor-pointer">
-            <ButtonInner name="Login" component_name='button_inner_main'/>
+         <div onClick={onClickSuccessEvent} className="mx-auto hover:shadow-lg flex bg-green-400 shadow-xl mb-4 shadow-green-200 p-2 align-center gap-2 cursor-pointer">
+            <ButtonInner name="Success" component_name='button_inner'/>
+          </div>
+        <a onClick={onClickFailureEvent} className="mx-auto hover:shadow-lg flex bg-red-400 shadow-xl shadow-red-200 p-2 align-center gap-2 cursor-pointer">
+            <ButtonInner name="Failure" component_name='button_inner'/>
           </a>
         </div>
       </div>
