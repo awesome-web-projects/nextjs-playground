@@ -15,7 +15,7 @@ export default function Home() {
     }
 
     const onReadBlog = () => {
-        router.push('/blogs/reasonlearn-projects')
+        router.push('/blogs/llm-reasoning-learning')
     }
 
     return (
@@ -33,7 +33,8 @@ export default function Home() {
                         <div>
                             <p className="text-lg font-semibold">reasonlearn</p>
                             <p className="text-xs text-slate-400">
-                                reasoning agent for research-grade writing
+                                reasoning agent for research-grade technical
+                                writing
                             </p>
                         </div>
                     </div>
@@ -94,7 +95,7 @@ export default function Home() {
                                 onClick={onViewDemo}
                                 size="lg"
                                 variant="outline"
-                                className="border-slate-700"
+                                className="border-slate-700 bg-slate-950/40 text-slate-200 hover:bg-slate-900/60 hover:text-white"
                             >
                                 View live demo
                             </Button>
@@ -199,7 +200,7 @@ export default function Home() {
                         <Button
                             onClick={onReadBlog}
                             variant="outline"
-                            className="border-slate-700 text-slate-200"
+                            className="border-slate-700 bg-slate-950/40 text-slate-200 hover:bg-slate-900/60 hover:text-white"
                         >
                             Open full article
                         </Button>
@@ -226,10 +227,11 @@ export default function Home() {
                                 <div className="h-12 w-12 rounded-full bg-slate-200" />
                                 <div>
                                     <p className="text-sm font-semibold text-slate-900">
-                                        Lahir S.
+                                        Antonio L.
                                     </p>
                                     <p className="text-xs text-slate-500">
-                                        Founder at reasonlearn • Sep 2026
+                                        Senior Lead at reasonlearn • Sep 2026 •
+                                        Text summary by ReasonLearn
                                     </p>
                                 </div>
                             </div>
@@ -367,7 +369,10 @@ export default function Home() {
                             Turn dense research into clear reasoning
                         </h2>
                     </div>
-                    <Button variant="outline" className="border-slate-700">
+                    <Button
+                        variant="outline"
+                        className="border-slate-700 bg-slate-950/40 text-slate-200 hover:bg-slate-900/60 hover:text-white"
+                    >
                         See workflow library
                     </Button>
                 </div>
@@ -623,7 +628,7 @@ export default function Home() {
                             <Button
                                 size="lg"
                                 variant="outline"
-                                className="border-slate-700"
+                                className="border-slate-700 bg-slate-950/40 text-slate-200 hover:bg-slate-900/60 hover:text-white"
                             >
                                 Schedule a demo
                             </Button>
