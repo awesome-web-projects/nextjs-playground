@@ -18,7 +18,9 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="prose prose-sm prose-invert max-w-none">
-                    <h1 className="text-xl p-8 font-bold">Landing Page</h1>
+                    <h1 className="text-xl p-8 font-bold">
+                        Test Page Component
+                    </h1>
                     <a
                         onClick={onClickEvent}
                         className="mx-auto hover:shadow-lg flex bg-green-400 shadow-xl mb-4 shadow-green-200 p-2 align-center gap-2 cursor-pointer"
